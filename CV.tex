@@ -117,17 +117,17 @@
 \textbf{技术栈}: Java 17 + Spring Boot 3.2 + Spring Cloud Alibaba + MyBatis-Plus + MySQL 8.0, Redis Stack + RabbitMQ + Redisson + WebSocket + MinIO + LangChain4j + Docker
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item 独立设计并实现基于 Spring Cloud Alibaba 的微服务架构，将app端拆分为 Gateway 网关、web-app 用户端、chat-service 即时通讯、agent-service AI 检索四个独立服务，采用 Nacos 实现服务发现与配置中心管理。
+    \item 独立设计并实现基于 \textbf{Spring Cloud Alibaba} 的微服务架构，将app端拆分为 \textbf{Gateway} 网关、\textbf{web-app} 用户端、\textbf{chat-service} 即时通讯、\textbf{agent-service} AI 检索四个独立服务，采用 \textbf{Nacos} 实现服务发现与配置中心管理。
 
-    \item 基于 LangChain4j + MiniMax LLM + 阿里 DashScope Embedding 构建 RAG 检索增强生成管道，将结构化房源数据嵌入 Redis Stack 向量库，实现自然语言驱动的智能房源推荐。
+    \item 基于 \textbf{LangChain4j} + \textbf{MiniMax LLM} + 阿里 \textbf{DashScope Embedding} 构建 \textbf{RAG} 检索增强生成管道，将结构化房源数据嵌入 \textbf{Redis Stack} 向量库，实现自然语言驱动的智能房源推荐。
 
-    \item 集成 RabbitMQ 异步消息队列，实现房间变更自动重索引、聊天消息持久化、浏览历史记录、租约到期通知等四项异步任务，采用手动确认 + 重试机制保障消息可靠投递。
+    \item 集成 \textbf{RabbitMQ} 异步消息队列，实现房间变更自动重索引、聊天消息持久化、浏览历史记录、租约到期通知等四项异步任务，采用手动确认 + 重试机制保障消息可靠投递。
 
-    \item 基于 WebSocket + Redis Pub/Sub 实现跨实例实时通讯，支持多实例部署下的聊天消息分发与已读未读状态追踪，打通房源详情页与房东即时沟通链路。
+    \item 基于 \textbf{WebSocket} + \textbf{Redis Pub/Sub} 实现跨实例实时通讯，支持多实例部署下的聊天消息分发与已读未读状态追踪，打通房源详情页与房东即时沟通链路。
 
-    \item 使用 Redisson 分布式锁按房间粒度防护租约签约超卖、进行聊天会话去重。
+    \item 使用 \textbf{Redisson} 分布式锁按房间粒度防护租约签约超卖、进行聊天会话去重。
 
-    \item 封装 ThreadLocal 上下文持有者 + 自定义拦截器实现 JWT 无感认证，建立统一全局异常拦截器与标准 Result 返回格式。
+    \item 封装 \textbf{ThreadLocal} 上下文持有者 + 自定义拦截器实现 \textbf{JWT} 无感认证，建立统一全局异常拦截器与标准 \textbf{Result} 返回格式。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
@@ -138,13 +138,13 @@
 {\small\color{CVBlue}仓库链接 \faGithubSquare\ \href{https://github.com/yitian-chen/Synchro}{https://github.com/yitian-chen/Synchro}}\\*
 \textbf{技术栈}Java 17 + Spring Boot 3.3 + LangChain4j + DashScope Embedding + MySQL 8 + JPA + Flyway + Redis Stack + STOMP WebSocket + MinIO + Docker
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]                                
-    \item 基于 LangChain4j 与大语言模型实现 8 轮 AI 性格面试，从自然对话中提取 22 维人格特征，替代传统问卷，提升用户体验与数据密度。
+    \item 基于 \textbf{LangChain4j} 与大语言模型实现 8 轮 \textbf{AI 性格面试}，从自然对话中提取 22 维人格特征，替代传统问卷，提升用户体验与数据密度。
     
-    \item 设计多因子加权匹配算法，融合特征余弦相似度、1536 维语义嵌入相似度、互补性格匹配及双向理想画像匹配，实现自动化周度配对。
+    \item 设计\textbf{多因子加权匹配算法}，融合特征余弦相似度、1536 维语义嵌入相似度、互补性格匹配及双向理想画像匹配，实现自动化周度配对。
     
-    \item 使用 Redis Stack 作为向量存储与缓存层，支持高性能语义检索与实时消息缓存。
+    \item 使用 \textbf{Redis Stack} 作为向量存储与缓存层，支持高性能语义检索与实时消息缓存。
     
-    \item 基于 STOMP over WebSocket 实现实时聊天。
+    \item 基于 \textbf{STOMP over WebSocket} 实现实时聊天。
     
     % \item 采用 Resilience4j 熔断重试、Flyway 数据库版本管理、MinIO 对象存储等工程化实践                                 
 \end{itemize}
